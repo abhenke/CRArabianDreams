@@ -1,7 +1,6 @@
 <html>
 <link rel="icon" href="https://i.imgur.com/C7EfzJL.jpg">
 <head>
-
 <title>CR Arabian Dreams</title>
 
 <style>
@@ -11,167 +10,277 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     height: 350px;
-    color:white;
-    text-align:center;
     padding:50px;	
     border-radius: 15px 15px 5px 5px;
     border-style: outset;
-    margin-left: auto;
-    margin-right: auto;
    
 }
-nav {
-    line-height:30px;
-    height:75px;
-    width:100px;
-    float:left;
-    padding:5px;	
-    margin-left: auto;
-    margin-right: auto;      
-}
-
 body{
   	background-color: #cccccc;
   	background-image: repeating-radial-gradient(#A4FFF1, #E1A4FF);
-}
-
-section {
-    width:351px;
-    text-align:center;
-    float:left;
-    padding: 65px;
-    margin-left: auto;
-    margin-right: auto; 
-}
-h1 {
-   color: white;
-   text-shadow: 2px 2px #939799;
-   bottom: 100px;
-   left: 450px;
-   position: absolute;
-   
-}
-legend{
-	color: white;
-	text-shadow: 2px 2px #939799;
-	margin-left: auto;
-    margin-right: auto;
-}
-label{
-	color: white;
-	text-shadow: 2px 2px #939799;
-	margin-left: auto;
-    margin-right: auto;
+  	justify-content: center;
+  	font-size: 24px;
+  	text-align:center;
+  	width: 100%;
 }
 
 footer {
     background-color:black;
     color:white;
     clear:both;
-    text-align:center;
     padding:5px;	
     border-style: outset; 	
     border-radius: 5px 5px 15px 15px;
     margin-left: auto;
     margin-right: auto;
 }
-input{
-    background-color: black;
-    color:white;
-    text-align:center;	
-    border-radius: 15px 15px 15px 15px;
-    border-style: outset;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+
+#primary_nav_wrap
+{
+	margin-top:5px;
+	width: 50%;
+	margin-left: auto;
+    margin-right: auto;
 }
-#one{
-  position: relative;
-  top: 150px;
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:center;
+	margin:0;
+	padding:0
 }
-#two{
-  position: relative;
-  top: 150px;
+
+#primary_nav_wrap ul a
+{
+	display:block;
+	color:#FFFFFF;
+	text-decoration:none;
+	font-weight:700;
+	font-size:12px;
+	line-height:32px;
+	padding:0 15px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
 }
-#three{
-position: relative;
-  top: 150px;
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
 }
-#four{
-position: relative;
-  top: 150px;
+
+#primary_nav_wrap ul li.current-menu-item
+{
+	background:#505050
+}
+#primary_nav_wrap ul li.other-menu-items
+{
+	background:#000000;
+}
+#primary_nav_wrap ul li:hover
+{
+	background:#E1A4FF
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#000000;
+	padding:0
+	
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+
+#primary_nav_wrap ul ul ul
+{
+	top:0;
+	left:100%
 
 }
-#five{
-position: relative;
-  top: 150px;
- 
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block
 }
-#six{
-position: relative;
-  top: 150px;
- 
+.nav{
+	width: 80%;
+	margin-left: auto;
+    margin-right: auto;
+
+}
+@import url(https://fonts.googleapis.com/css?family=Open+sans);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+.snip1515 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  min-width: 230px;
+  max-width: 315px;
+  color: #000000;
+  text-align: center;
+  line-height: 1.4em;
+  font-size: 14px;
+  box-shadow: none !important;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.snip1515 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.snip1515 .profile-image {
+  display: inline-block;
+  width: 80%;
+  z-index: 1;
+  position: relative;
+  padding: 10px;
+  border: 2px solid #e8b563;
+}
+
+.snip1515 .profile-image img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.snip1515 figcaption {
+  width: 100%;
+  background-color: #F2F2F2;
+  color: #555;
+  padding: 125px 25px 25px;
+  margin-top: -100px;
+  display: inline-block;
+}
+
+.snip1515 h3,
+.snip1515 h4,
+.snip1515 p {
+  margin: 0 0 5px;
+}
+
+.snip1515 h3 {
+  font-weight: 600;
+  font-size: 1.3em;
+  font-family: 'Playfair Display', Arial, sans-serif;
+}
+
+.snip1515 h4 {
+  color: #8c8c8c;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.snip1515 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
 }
 </style>
 </head>
 
 <body>
 <header>
-<h1></h1>
-<form action="Homepage.html" method="POST">
-	
-         
-	          <input type="submit" value="Home Page" id="six"/>
-          
-		</form>
-<form action="AboutMe.html" method="POST">
-	
-         
-	          <input type="submit" value="About Me" id="one"/>
-          
-		</form>
-       <form action="Mares.html" method="POST">   
-	          <input type="submit" value="Mares" id="two"/>
-          	
-	
-	
-		</form>
-		<form action="Stallions.html" method="POST">
-       
-	          <input type="submit" value="Stallions" id="three" />
-         
-		
-		</form>
-		
-		<form action="Boarding.html" method="POST">
-	
-          
-	          <input type="submit" value="Boarding" id="four"/>
-        
-		</form>
-		<form action="Events.html" method="POST">
-	
-         
-	          <input type="submit" value="Upcoming Activities" id="five"/>
-          
-		</form>
-		<form action="SaleList.html" method="POST">
-	
-         
-	          <input type="submit" value="Sale List" id="six"/>
-          
-		</form>
 </header>
-	<h2>
-Stallions: <br>
+<div>
+        <nav id="primary_nav_wrap">
+<ul>
+  <li class="other-menu-items"><a href="index.htm">Home</a></li>
+  <li class = "other-menu-items"><a href="AboutMe.html">About Me</a>
+    <ul>
+      </li>
+    </ul>
+  </li>
+  <li class = "current-menu-item"><a href="#">Horses</a>
+    <ul>
+      <li><a href="Stallions.html">Stallions</a></li>
+      <li><a href="Mares.html">Mares</a></li>
+      
+    </ul>
+  </li>
+  <li class = "other-menu-items"><a href="Boarding.html">Boarding</a>
+  </li>
+  <li class = "other-menu-items"><a href="SaleList.html">Sale List</a></li>
+  <li class = "other-menu-items"><a href="Events.html">Events</a></li>
+  <li class = "other-menu-items"><a href="Gallery.html">Gallery</a></li>
+  <li class = "other-menu-items"><a href="ContactUs.html">Contact Us</a></li>
+</ul>
+</nav>
+</div>
+
+<h2>
+<br>Stallions<br>
 </h2>
 <h3>
-Notorious Dan<br>
-CR AD Divine Edition<br>
-CR AD Prince Nelson TB <br>
-SA Bit O Justice (retired)
 </h3>
 
+<figure class="snip1515">
+  <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/DanSide.jpg" alt="Dan1" /></div>
+  <figcaption>
+    <h3>Notorious Dan</h3>
+    <h4>"Dan"</h4>
+    <p></form>
+		<form action="https://www.allbreedpedigree.com/notorious+dan" method="GET">	
+          
+	          <input type="submit" value="Pedigree" id="four"/>
+		</form></p>
+  </figcaption>
+</figure>
+<figure class="snip1515">
+  <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/Waylon.jpg" alt="Waylon" /></div>
+  <figcaption>
+    <h3>CR AD Divine Edition</h3>
+    <h4>"Waylon"</h4>
+    <p></form>
+		<form action="https://www.allbreedpedigree.com/crad+divine+edition" method="GET">	
+          
+	          <input type="submit" value="Pedigree" id="four"/>
+		</form></p>
+  </figcaption>
+</figure>
+<figure class="snip1515">
+  <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/PrinceProfile.jpg" alt="princeProfile" /></div>
+  <figcaption>
+    <h3>CR AD Prince Nelson TB</h3>
+    <h4>"Prince"</h4>
+    <p></form>
+		<form action="https://www.allbreedpedigree.com/crad+prince+nelson" method="GET">	
+          
+	          <input type="submit" value="Pedigree" id="four"/>
+		</form></p>
+  </figcaption>
+</figure>
+</figure>
+<figure class="snip1515">
+  <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/Justice2.jpg" alt="Justice" /></div>
+  <figcaption>
+    <h3>SA Bit O Justice</h3>
+    <h4>"Justice" (retired)</h4>
+    <p>
+    </form>
+		<form action="https://www.allbreedpedigree.com/sa+bit+o+justice" method="GET">	
+          
+	          <input type="submit" value="Pedigree" id="four"/>
+		</form></p>
+  </figcaption>
+</figure>
 
 <footer>
 </footer>
