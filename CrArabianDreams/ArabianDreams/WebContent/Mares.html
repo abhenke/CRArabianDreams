@@ -1,24 +1,17 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <link rel="icon" href="https://crarabiandreams.s3.us-east-2.amazonaws.com/BrandIcon.jpg">
 <head>
-<meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 <title>CR Arabian Dreams</title>
 <style>
-header {
-    background-image: url("https://i.imgur.com/0uUJd1o.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 350px;
-    padding:50px;	
-    position: relative;
-   
-}
 body{
   	background-color: #cccccc;
   	background-image: repeating-radial-gradient(#A4FFF1, #E1A4FF);
@@ -33,324 +26,235 @@ margin-right: auto;
 margin-left: auto;
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
-  display: inline-block;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
-  margin-top:350px;
-  margin-bottom: 20px;
+.carousel-indicators {
+    height: 3px !important;
+        border-radius: 0px !important;
+        width: 25%;
 }
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: center;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  background-color: black;
-  border-radius:15px;
-  border-style: outset;
+.profile-image{
+width:100%;
+height: 75%
 }
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  color: yellow;
+.mensa{
+width: 500px;
 }
-
-/* Add a color to the active/current link */
-.topnav a.current-menu-item {
-  background-color: black;
-  color: yellow;
-}
-@import url(https://fonts.googleapis.com/css?family=Open+sans);
-@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
-.snip1515 {
-  font-family: 'Open Sans', Arial, sans-serif;
-  min-width: 230px;
-  max-width: 315px;
-  color: #000000;
-  text-align: center;
-  line-height: 1.4em;
-  font-size: 14px;
-  box-shadow: none !important;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  
-}
-
-.snip1515 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.snip1515 .profile-image {
-  display: inline-block;
-  width: 80%;
-  z-index: 1;
-  position: relative;
-  padding: 10px;
-  border: 2px solid #e8b563;
-}
-
-.snip1515 .profile-image img {
-  max-width: 100%;
-  vertical-align: top;
-}
-
-.snip1515 figcaption {
-  width: 100%;
-  background-color: #F2F2F2;
-  color: #555;
-  padding: 125px 25px 25px;
-  margin-top: -100px;
-  display: inline-block;
-}
-
-.snip1515 h3,
-.snip1515 h4,
-.snip1515 p {
-  margin: 0 0 5px;
-}
-
-.snip1515 h3 {
-  font-weight: 600;
-  font-size: 1.3em;
-  font-family: 'Playfair Display', Arial, sans-serif;
-}
-
-.snip1515 h4 {
-  color: #8c8c8c;
-  font-weight: 400;
-  letter-spacing: 2px;
-}
-
-.snip1515 p {
-  font-size: 0.9em;
-  letter-spacing: 1px;
-  opacity: 0.9;
-}
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 15px;
-}
-.gallery_item-1 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 6;
-}
-.gallery_item-2 {
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 6;
-}
-.gallery_item-3 {
-    grid-column-start: 6;
-    grid-column-end: 8;
-    grid-row-start: 1;
-    grid-row-end: 6;
-}
-.gallery_item-4 {
-  grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 6;
-    grid-row-end: 12;
-}
-.gallery_item-5 {
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 6;
-    grid-row-end: 12;
-}
-.gallery_item-6 {
-    grid-column-start: 6;
-    grid-column-end: 8;
-    grid-row-start: 6;
-    grid-row-end: 12;
-}
-.gallery_item-7 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start:12;
-    grid-row-end: 18;
-}
-.gallery_item-8 {
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start:11;
-    grid-row-end: 17;
-}
-.gallery_item-9 {
-    grid-column-start: 6;
-    grid-column-end: 8;
-    grid-row-start:11;
-    grid-row-end: 17;
+.witch{
+width: 500px;
 }
 
 </style>
 </head>
 </head>
 <header>
-<div class="topnav">
-  <a class="other-menu-items" href="index.htm">Home</a>
-  <a class = "other-menu-items" href="AboutMe.html">About Me</a>
-  <a class = "other-menu-items" href="Stallions.html">Stallions</a>
-  <a class = "current-menu-item"href="Mares.html">Mares</a>
-  <a class = "other-menu-items" href="Boarding.html">Boarding</a>
-  <a class = "other-menu-items" href="SaleList.html">Sale List</a>
-  <a class = "other-menu-items" href="Events.html">Events</a>
-  <a class = "other-menu-items" href="Gallery.html">Gallery</a>
-  <a class = "other-menu-items" href="ContactUs.html">Contact Us</a>
-</div>
 </header>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.htm">CR Arabian Dreams</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.htm">Home</a></li>
+      <li><a href="AboutMe.html">About Me</a></li>
+      <li><a href="Stallions.html">Stallions</a></li>
+      <li  class="active"><a href="Mares.html">Mares</a></li>
+      <li><a href="Boarding.html">Boarding</a></li>
+      <li><a href="SaleList.html">Sale List</a></li>
+      <li><a href="Events.html">Events</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="ContactUs.html">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
 <body>
-<br>
-<br>
 <h2>
-Mares
+<br>
+<br>
+We offer our mares for on-site breed lease.
+<br>
 </h2>
-<div class ="text">
-We offer mares for on site breed lease.
-</div>
+
+
 <div class="container">
-<div class="gallery">
-	<figure class="gallery_item-1">
-		<figure class="snip1515">
-  			<div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/CharlieRidingCrop.jpg" alt="Charlie" /></div>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+      <li data-target="#myCarousel" data-slide-to="7"></li>
+      <li data-target="#myCarousel" data-slide-to="8"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+      	<div class="profile-image">
+      		<img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/CharlieRidingCrop.jpg" alt="Charlie" style="height:100%"/></div>
   				<figcaption>
    					 <h3>AD Cherubian Anima</h3>
     				<h4>"Charlie"</h4>
     				<p>My blind trail horse.<br>
-    					</form>
+    					
 							<form action="https://www.allbreedpedigree.com/ad+cherubian+anima" method="GET">	
           					<input type="submit" value="Pedigree" id="four"/>
-						</form>
-					</p>
+						    </form>
   				</figcaption>
-		</figure>
-	</figure>
-<figure class="gallery_item-2">	
-<figure class="snip1515">
-  <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/BelleProfile.jpg" alt="Belle" /></div>
-  <figcaption>
-    <h3>TB Belle Chimes</h3>
-    <h4>"Belle"</h4>
-    <p></form>
+      </div>
+
+      <div class="item">
+        <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/BelleProfile.jpg" alt="Belle" style="height:100%"/></div>
+  			<figcaption>
+    		<h3>TB Belle Chimes</h3>
+    		<h4>"Belle"</h4>
+    		<p>
 		<form action="https://www.allbreedpedigree.com/tb+belle+chimes" method="GET">	       
 	          <input type="submit" value="Pedigree" id="four"/>
-		</form></p>
+		</form>
   </figcaption>
-</figure>
-</figure>	
-	<figure class="gallery_item-3">		
-		<figure class="snip1515">
-  			<div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/Phancee.jpg" alt="Phancee" /></div>
+      </div>
+      
+      <div class="item">
+      
+        <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/Phancee.jpg" alt="Phancee" /></div>
   				<figcaption>
     				<h3>CRAD Phancee Pants</h3>
     				<h4>"Phancee"</h4>
-    				<p></form>
+    				<p>
 							<form action="https://www.allbreedpedigree.com/crad+phancy+pants" method="GET">	
           						<input type="submit" value="Pedigree" id="four"/>
-							</form></p>
+							</form>
   				</figcaption>
-		</figure>
-	</figure>	
-
-<figure class="gallery_item-4">
-<figure class="snip1515">
-  <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/DreamCrop.jpg" alt="Dream" /></div>
+  
+      </div>
+      
+    
+      <div class="item">
+      
+        <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/DreamCrop.jpg" alt="Dream" style="height:100%"/></div>
   <figcaption>
     <h3>SF Ghostly Dreamer</h3>
     <h4>"Dream"</h4>
-    <p></form>
+    <p>
 		<form action="https://www.allbreedpedigree.com/sf+ghostly+dreamer" method="GET">	        
 	          <input type="submit" value="Pedigree" id="four"/>
-		</form></p>
+		</form>
   </figcaption>
-</figure>
-</figure>
-<figure class="gallery_item-5">
-<figure class="snip1515">
-  <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/Mensa.jpg" alt="Mensa" /></div>
+  
+      </div>
+      
+      
+        <div class="item">
+      
+        	<div class="profile-image mensa"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/Mensa.jpg" alt="Mensa" /></div>
   <figcaption>
     <h3>FWF Mensa</h3>
     <h4>"Mensa"</h4>
     <p>
-    </form>
 		<form action="https://www.allbreedpedigree.com/fwf+mensa" method="GET">	        
 	          <input type="submit" value="Pedigree" id="four"/>
-		</form></p>
+		</form>
   </figcaption>
-</figure>
-</figure>
-<figure class="gallery_item-6">
-<figure class="snip1515">
+  
+      </div>
+      
+      
+        <div class="item">
+      
+       	
   <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/Enchantment.jpg" alt="Enchantment" /></div>
   <figcaption>
     <h3>Payback Enchantment</h3>
     <h4></h4>
-    <p></form>
+    <p>
 		<form action="https://www.allbreedpedigree.com/payback+enchantment" method="GET">	
           
 	          <input type="submit" value="Pedigree" id="four"/>
-		</form></p>
+		</form>
   </figcaption>
-</figure>
-</figure>
-<figure class="gallery_item-7">
-<figure class="snip1515">
-  <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/Bewitchin.jpg" alt="Bewitchin" /></div>
-  <figcaption>
+       
+      </div>
+      
+      
+      
+        <div class="item">
+      
+	        <div class="profile-image witch"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/Bewitchin.jpg" alt="Bewitchin" /></div>
+  	<figcaption>
     <h3>Payback Bewitchin</h3>
     <h4></h4>
-    <p></form>
+    <p>
 		<form action="https://www.allbreedpedigree.com/payback+bewitchin" method="GET">	        
 	          <input type="submit" value="Pedigree" id="four"/>
-		</form></p>
+		</form>
   </figcaption>
-</figure>
-</figure>
-<figure class="gallery_item-8">
-<figure class="snip1515">
-  <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/Peyton.jpg" alt="Peyton" /></div>
+  
+      </div>
+      
+      
+  <div class="item">
+      
+        	<div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/Peyton.jpg" alt="Peyton" /></div>
   <figcaption>
     <h3>Shalimar Peyton</h3>
     <h4>(retired)</h4>
-    <p></form>
+    <p>
 		<form action="https://www.allbreedpedigree.com/shalimar+peyton" method="GET">	
           
 	          <input type="submit" value="Pedigree" id="four"/>
-		</form></p>
+		</form>
   </figcaption>
-</figure>
-</figure>
-<figure class="gallery_item-9">
-<figure class="snip1515">
-  <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/Caliope2.jpg" alt="Caliope" /></div>
+  
+      </div>
+      
+      
+       <div class="item">  
+        		<div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/Caliope2.jpg" alt="Caliope" /></div>
   <figcaption>
     <h3>Shalimar Caliope</h3>
     <h4>(retired)</h4>
-    <p></form>
+    <p>
 		<form action="https://www.allbreedpedigree.com/shalimar+caliope" method="GET">	
           
 	          <input type="submit" value="Pedigree" id="four"/>
-		</form></p>
+		</form>
   </figcaption>
-</figure>
-</figure>
-</div>
+  
+      </div>
+      
+      
+       <div class="item">
+        <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/Phancee.jpg" alt="Phancee" /></div>
+  				<figcaption>
+    				<h3>CRAD Phancee Pants</h3>
+    				<h4>"Phancee"</h4>
+    				<p>
+							<form action="https://www.allbreedpedigree.com/crad+phancy+pants" method="GET">	
+          						<input type="submit" value="Pedigree" id="four"/>
+							</form>
+  				</figcaption>
+  
+      </div>     
+      
+      
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 </div>
 <footer>
+<br>
 </footer>
 </body>
 </html>
