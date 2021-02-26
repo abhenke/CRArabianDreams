@@ -1,178 +1,110 @@
-<html>
-<link rel="icon" href="https://i.imgur.com/C7EfzJL.jpg">
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="icon" href="https://crarabiandreams.s3.us-east-2.amazonaws.com/BrandIcon.jpg">
 <head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 <title>CR Arabian Dreams</title>
 
-<style>
-header {
-    background-color: black;
-    background-image: url("https://i.imgur.com/0uUJd1o.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 350px;
-    padding:50px;	
-    border-radius: 15px 15px 5px 5px;
-    border-style: outset;
-   
-}
+<style type="text/css"><!--
+
 body{
-  	background-color: #cccccc;
-  	background-image: repeating-radial-gradient(#A4FFF1, #E1A4FF);
+  	background-color: #CCF3F1;
   	justify-content: center;
-  	font-size: 24px;
   	text-align:center;
-  	width: 100%;
 }
 
-footer {
-    background-color:black;
-    color:white;
-    clear:both;
-    padding:5px;	
-    border-style: outset; 	
-    border-radius: 5px 5px 15px 15px;
-    margin-left: auto;
-    margin-right: auto;
+.text{
+width: 50%;
+margin-right: auto;
+margin-left: auto;
 }
-
-#primary_nav_wrap
-{
-	margin-top:5px;
-	width: 65%;
-	margin-left: auto;
-    margin-right: auto;
-}
-
-#primary_nav_wrap ul
-{
-	list-style:none;
-	position:relative;
-	float:center;
-	margin:0;
-	padding:0
-}
-
-#primary_nav_wrap ul a
-{
-	display:block;
-	color:#FFFFFF;
-	text-decoration:none;
-	font-weight:700;
-	font-size:12px;
-	line-height:32px;
-	padding:0 15px;
-	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
-}
-
-#primary_nav_wrap ul li
-{
-	position:relative;
-	float:left;
-	margin:0;
-	padding:0
-}
-
-#primary_nav_wrap ul li.current-menu-item
-{
-	background:#505050
-}
-#primary_nav_wrap ul li.other-menu-items
-{
-	background:#000000;
-}
-#primary_nav_wrap ul li:hover
-{
-	background:#E1A4FF
-}
-
-#primary_nav_wrap ul ul
-{
-	display:none;
-	position:absolute;
-	top:100%;
-	left:0;
-	background:#000000;
-	padding:0
+@media only screen and (max-width: 768px) {
+ 
+   header{
+   height: 27px;
+   }
+ 
+   .navbar-expand-lg .navbar-collapse {
+	display: flex!important;
+	justify-content: space-around;
+	flex-basis: auto;
+	}
+		
+	button{
+	border: 0;
+	padding: 0;
+	background-color: #CCF3F1;
+	}
 	
+   .navbar{
+   background-color: #CCF3F1;
+   border-style: none;
+   }
+   
+   .navbar-nav{
+	background-color: #222;
+	border-style: solid;
+	border-color: #080808;
+	border-width: 1px;
+	border-radius: 4px;
+   }
+ 
 }
-
-#primary_nav_wrap ul ul li
-{
-	float:none;
-	width:200px
+@media only screen and (min-width: 768px) {
+   button{
+   visibility: hidden;
+   }
+   .nav-collapse.collapse{
+   display: block!important;
+   }
 }
-
-#primary_nav_wrap ul ul a
-{
-	line-height:120%;
-	padding:10px 15px
-}
-
-#primary_nav_wrap ul ul ul
-{
-	top:0;
-	left:100%
-
-}
-
-#primary_nav_wrap ul li:hover > ul
-{
-	display:block
-}
-.nav{
-	width: 80%;
-	margin-left: auto;
-    margin-right: auto;
-
-}
-
-
 </style>
 </head>
-
-<body>
 <header>
 </header>
-<div>
-        <nav id="primary_nav_wrap">
-<ul>
-  <li class="other-menu-items"><a href="Homepage.html">Home</a></li>
-  <li class = "current-menu-item"><a href="AboutMe.html">About Me</a>
-    <ul>
-      </li>
-    </ul>
-  </li>
-  <li class = "other-menu-items"><a href="#">Horses</a>
-    <ul>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">☰ Menu</span>
+  </button>
+<nav id="hamburger" class="navbar navbar-expand-lg navbar-inverse navbar-collapse">
+  <div class="nav-collapse collapse" id="navbarNavAltMarkup">
+  	<div class="btn-group mx-auto">
+    <ul class="nav navbar-nav">
+      <li><a href="index.htm">Home</a></li>
+      <li class="active"><a href="AboutMe.html">About Me</a></li>
       <li><a href="Stallions.html">Stallions</a></li>
       <li><a href="Mares.html">Mares</a></li>
-      
+      <li><a href="Boarding.html">Boarding</a></li>
+      <li><a href="SaleList.html">Sale List</a></li>
+      <li><a href="Events.html">Events</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="ContactUs.html">Contact Us</a></li>
     </ul>
-  </li>
-  <li class = "other-menu-items"><a href="Boarding.html">Boarding</a>
-  </li>
-  <li class = "other-menu-items"><a href="SaleList.html">Sale List</a></li>
-  <li class = "other-menu-items"><a href="Events.html">Events</a></li>
-  <li class = "other-menu-items"><a href="Gallery.html">Gallery</a></li>
-  <li class = "other-menu-items"><a href="ContactUs.html">Contact Us</a></li>
-</ul>
+  </div>
+  </div>
 </nav>
-</div>
+<body>
 <h2>
    <br>
 Counseling / Lessons / Training.
 </h2>
-<h3>
-This is for people with "problem" horses and beginners.  I help either here or on sight with the owner and the horse.
-For problem horses, I help figure out what the "problem" is by talking with the owner and watching the horse and owner working together. I help both the horse and owner by giving them the knowledge in "reading" each others body language so they better understand each other. I will help find each of their strengths and weakness to be able to be a successful team on the trail or what ever events they choose to be involved in.
-For beginners we help build confidence for both horse and owner. Teach steps in training. Help with learning about equipment, cost, feed and anything related to the care and maintenance of the horse.<br><br>
-</h3>
+<div class = "text">
+This is for people with "problem" horses and beginners.  I help either here or on site with the owner and horse.
+For problem horses, I help figure out what the "problem" is by talking with the owner and watching the horse and owner work together. I help both the horse and owner by giving them the knowledge of "reading" each others body language so they better understand each other. I will help find each of their strengths and weakness to be able to be a successful team on the trail or any events they are involved in.
+For beginners, I help build confidence for both horse and owner. I teach steps in training. I also help with learning about equipment, cost, feed, care, and maintenance of a horse.<br><br>
+</div>
 <h2>
 Breeding/Sales
 </h2>
-<h3>
-We stand a few great stallions to the public,  and have a band of beautiful brood mares. We Strive to produce my vision of the perfect Arabian, the original all around horse. Horses with sound bodies and minds that can go from the show ring to the trail and anything inbetween.
-</h3>
+<div class = "text">
+We stand a few great stallions to the public,  and have a band of beautiful brood mares. We strive to produce my vision of the perfect Arabian; the original all around horse. Horses with sound bodies and minds that can go from the show ring to the trail and anything in between.
+</div>
 <h3>
 Feel free to contact me via phone or email with any questions or concerns you may have. 
 </h3>
