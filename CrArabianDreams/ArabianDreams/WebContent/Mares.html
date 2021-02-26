@@ -13,10 +13,7 @@
 <title>CR Arabian Dreams</title>
 <style>
 body{
-  	background-color: #cccccc;
-  	background-image: repeating-radial-gradient(#A4FFF1, #E1A4FF);
-  	justify-content: center;
-  	font-size: 24px;
+  	background-color: #CCF3F1;
   	text-align:center;
 }
 
@@ -26,20 +23,68 @@ margin-right: auto;
 margin-left: auto;
 }
 
-.carousel-indicators {
-    height: 3px !important;
-        border-radius: 0px !important;
-        width: 25%;
+@media only screen and (max-width: 768px) {
+ 
+   header{
+   height: 27px;
+   }
+ 
+   .navbar-expand-lg .navbar-collapse {
+	display: flex!important;
+	justify-content: space-around;
+	flex-basis: auto;
+	}
+		
+	button{
+	border: 0;
+	padding: 0;
+	background-color: #CCF3F1;
+	}
+	
+   .navbar{
+   background-color: #CCF3F1;
+   border-style: none;
+   }
+   
+   .navbar-nav{
+	background-color: #222;
+	border-style: solid;
+	border-color: #080808;
+	border-width: 1px;
+	border-radius: 4px;
+   }
+ 
 }
-.profile-image{
-width:100%;
-height: 75%
+@media only screen and (min-width: 768px) {
+   button{
+   visibility: hidden;
+   }
+   .nav-collapse.collapse{
+   display: block!important;
+   }
 }
-.mensa{
-width: 500px;
+
+img{
+max-width:400px;
+margin-right: 30px;
+margin-left: 30px;
+margin-top: 30px;
 }
-.witch{
-width: 500px;
+
+.item{
+border-width: 5px;
+border-style: dotted;
+border-color: #D7BE69;
+max-width: 500px;
+margin-right: auto;
+margin-left: auto;
+margin-top: 30px;
+}
+
+#button{
+margin-bottom: 30px;
+color: #800000;
+background-color: #D7BE69;
 }
 
 </style>
@@ -47,11 +92,12 @@ width: 500px;
 </head>
 <header>
 </header>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="index.htm">CR Arabian Dreams</a>
-    </div>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">☰ Menu</span>
+  </button>
+<nav id="hamburger" class="navbar navbar-expand-lg navbar-inverse navbar-collapse">
+  <div class="nav-collapse collapse" id="navbarNavAltMarkup">
+  	<div class="btn-group mx-auto">
     <ul class="nav navbar-nav">
       <li><a href="index.htm">Home</a></li>
       <li><a href="AboutMe.html">About Me</a></li>
@@ -64,8 +110,8 @@ width: 500px;
       <li><a href="ContactUs.html">Contact Us</a></li>
     </ul>
   </div>
+  </div>
 </nav>
-<body>
 <h2>
 <br>
 <br>
@@ -74,46 +120,35 @@ We offer our mares for on-site breed lease.
 </h2>
 
 
-<div class="container">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-      <li data-target="#myCarousel" data-slide-to="5"></li>
-      <li data-target="#myCarousel" data-slide-to="6"></li>
-      <li data-target="#myCarousel" data-slide-to="7"></li>
-      <li data-target="#myCarousel" data-slide-to="8"></li>
-    </ol>
+      <div class="item">
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-      	<div class="profile-image">
-      		<img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/CharlieRidingCrop.jpg" alt="Charlie" style="height:100%"/></div>
+      	<div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/CharlieRidingCrop.jpg" alt="Charlie"/></div>
   				<figcaption>
    					 <h3>AD Cherubian Anima</h3>
     				<h4>"Charlie"</h4>
     				<p>My blind trail horse.<br>
     					
 							<form action="https://www.allbreedpedigree.com/ad+cherubian+anima" method="GET">	
-          					<input type="submit" value="Pedigree" id="four"/>
+          					<input type="submit" value="Pedigree" id="button"/>
 						    </form>
   				</figcaption>
       </div>
 
       <div class="item">
-        <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/BelleProfile.jpg" alt="Belle" style="height:100%"/></div>
+        <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/belle2013.PNG" alt="Belle"/></div>
   			<figcaption>
     		<h3>TB Belle Chimes</h3>
     		<h4>"Belle"</h4>
     		<p>
+    	
 		<form action="https://www.allbreedpedigree.com/tb+belle+chimes" method="GET">	       
-	          <input type="submit" value="Pedigree" id="four"/>
+	          <input type="submit" value="Pedigree" id="button"/>
 		</form>
+		
+		<form action="https://www.facebook.com/media/set/?vanity=CrArabianDreams&set=a.333065333372960" method="GET">	       
+	          <input type="submit" value="Photo Gallery" id="button"/>
+		</form>
+		
   </figcaption>
       </div>
       
@@ -125,8 +160,12 @@ We offer our mares for on-site breed lease.
     				<h4>"Phancee"</h4>
     				<p>
 							<form action="https://www.allbreedpedigree.com/crad+phancy+pants" method="GET">	
-          						<input type="submit" value="Pedigree" id="four"/>
+          						<input type="submit" value="Pedigree" id="button"/>
 							</form>
+							
+							<form action="https://www.facebook.com/media/set/?vanity=CrArabianDreams&set=a.1732410926771720" method="GET">	       
+	                            <input type="submit" value="Photo Gallery" id="button"/>
+		                    </form>
   				</figcaption>
   
       </div>
@@ -134,13 +173,13 @@ We offer our mares for on-site breed lease.
     
       <div class="item">
       
-        <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/DreamCrop.jpg" alt="Dream" style="height:100%"/></div>
+        <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/Dream.jpg" alt="Dream"/></div>
   <figcaption>
     <h3>SF Ghostly Dreamer</h3>
     <h4>"Dream"</h4>
     <p>
 		<form action="https://www.allbreedpedigree.com/sf+ghostly+dreamer" method="GET">	        
-	          <input type="submit" value="Pedigree" id="four"/>
+	          <input type="submit" value="Pedigree" id="button"/>
 		</form>
   </figcaption>
   
@@ -155,7 +194,7 @@ We offer our mares for on-site breed lease.
     <h4>"Mensa"</h4>
     <p>
 		<form action="https://www.allbreedpedigree.com/fwf+mensa" method="GET">	        
-	          <input type="submit" value="Pedigree" id="four"/>
+	          <input type="submit" value="Pedigree" id="button"/>
 		</form>
   </figcaption>
   
@@ -172,7 +211,7 @@ We offer our mares for on-site breed lease.
     <p>
 		<form action="https://www.allbreedpedigree.com/payback+enchantment" method="GET">	
           
-	          <input type="submit" value="Pedigree" id="four"/>
+	          <input type="submit" value="Pedigree" id="button"/>
 		</form>
   </figcaption>
        
@@ -182,13 +221,13 @@ We offer our mares for on-site breed lease.
       
         <div class="item">
       
-	        <div class="profile-image witch"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/Bewitchin.jpg" alt="Bewitchin" /></div>
+	        <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/BewitchinSmall.jpg" alt="Bewitchin" /></div>
   	<figcaption>
     <h3>Payback Bewitchin</h3>
     <h4></h4>
     <p>
 		<form action="https://www.allbreedpedigree.com/payback+bewitchin" method="GET">	        
-	          <input type="submit" value="Pedigree" id="four"/>
+	          <input type="submit" value="Pedigree" id="button"/>
 		</form>
   </figcaption>
   
@@ -204,7 +243,7 @@ We offer our mares for on-site breed lease.
     <p>
 		<form action="https://www.allbreedpedigree.com/shalimar+peyton" method="GET">	
           
-	          <input type="submit" value="Pedigree" id="four"/>
+	          <input type="submit" value="Pedigree" id="button"/>
 		</form>
   </figcaption>
   
@@ -212,49 +251,23 @@ We offer our mares for on-site breed lease.
       
       
        <div class="item">  
-        		<div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/Caliope2.jpg" alt="Caliope" /></div>
+        		<div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/SHALIMARCALIOPE-Oct24-2006.jpg" alt="Caliope" /></div>
   <figcaption>
     <h3>Shalimar Caliope</h3>
     <h4>(retired)</h4>
     <p>
 		<form action="https://www.allbreedpedigree.com/shalimar+caliope" method="GET">	
           
-	          <input type="submit" value="Pedigree" id="four"/>
+	          <input type="submit" value="Pedigree" id="button"/>
 		</form>
   </figcaption>
   
       </div>
+    
       
-      
-       <div class="item">
-        <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/Phancee.jpg" alt="Phancee" /></div>
-  				<figcaption>
-    				<h3>CRAD Phancee Pants</h3>
-    				<h4>"Phancee"</h4>
-    				<p>
-							<form action="https://www.allbreedpedigree.com/crad+phancy+pants" method="GET">	
-          						<input type="submit" value="Pedigree" id="four"/>
-							</form>
-  				</figcaption>
-  
-      </div>     
-      
-      
-    </div>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
 <footer>
 <br>
 </footer>
-</body>
+
 </html>
