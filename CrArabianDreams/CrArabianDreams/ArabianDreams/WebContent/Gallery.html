@@ -9,70 +9,100 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css?v=1.1">
+
 
 <title>CR Arabian Dreams</title>
 
 <style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+    font-family: sans-serif;
+    background-color: #CCF3F1;
+  }
 
-body{
-  	background-color: #CCF3F1;
-  	justify-content: center;
-  	text-align:center;
-}
+  @media only screen and (max-width: 768px) {
 
-.text{
-width: 50%;
-margin-right: auto;
-margin-left: auto;
-}
+    header{
+      height: 27px;
+    }
 
-@media only screen and (max-width: 768px) {
- 
-   header{
-   height: 27px;
-   }
- 
-   .navbar-expand-lg .navbar-collapse {
-	display: flex!important;
-	justify-content: space-around;
-	flex-basis: auto;
-	}
-		
-	button{
-	border: 0;
-	padding: 0;
-	background-color: #CCF3F1;
-	}
-	
-   .navbar{
-   background-color: #CCF3F1;
-   border-style: none;
-   }
-   
-   .navbar-nav{
-	background-color: #222;
-	border-style: solid;
-	border-color: #080808;
-	border-width: 1px;
-	border-radius: 4px;
-   }
- 
-}
-@media only screen and (min-width: 768px) {
-   button{
-   visibility: hidden;
-   }
-   .nav-collapse.collapse{
-   display: block!important;
-   }
-}
+    .navbar-expand-lg .navbar-collapse {
+      display: flex!important;
+      justify-content: space-around;
+      flex-basis: auto;
+    }
 
-img{
-max-width:400px;
-margin-right: 30px;
-margin-left: 30px;
-margin-top: 30px;
-}
+    button{
+      border: 0;
+      padding: 0;
+      background-color: #CCF3F1;
+    }
+
+    .navbar{
+      background-color: #CCF3F1;
+      border-style: none;
+    }
+
+    .navbar-nav{
+      background-color: #222;
+      border-style: solid;
+      border-color: #080808;
+      border-width: 1px;
+      border-radius: 4px;
+    }
+
+  }
+  @media only screen and (min-width: 768px) {
+    button{
+      visibility: hidden;
+    }
+    .nav-collapse.collapse{
+      display: block!important;
+    }
+  }
+
+
+  .grid-container {
+    columns: 5 200px;
+    column-gap: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .grid-container div {
+    width: 150px;
+    margin: 0 1.5rem 1.5rem 0;
+    display: inline-block;
+    width: 100%;
+    border: solid 2px black;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+  }
+  .grid-container div:hover img {
+    filter: grayscale(0);
+  }
+  .grid-container div:hover {
+    border-color: #800000;
+  }
+  .grid-container div img {
+    width: 100%;
+
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+  }
+  .grid-container div p {
+    margin: 5px 0;
+    padding: 0;
+    text-align: center;
+    font-style: italic;
+  }
 
 </style>
 </head>
@@ -99,12 +129,122 @@ margin-top: 30px;
   </div>
 </nav>
 <body>
-<h2>
-<br>Welcome to our Gallery! 
-</h2>
-<h3>
-We will be adding photos soon!
-</h3>
+<h1>Gallery</h1>
+<div class="grid-container">
+  <div>
+    <img class='grid-item grid-item-1' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/Fourhorsies.jpg' alt=''>
+    <p>Trail ride</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-2' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/BabyMochaCow.jpg' alt=''>
+    <p>Bruce and Mocha (SOLD)</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-3' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/Brand.jpg' alt=''>
+    <p>"Made by Kimberly" Brand</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-4' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/CalvinTrot.jpg' alt=''>
+    <p>Calvin (SOLD)</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-5' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/CharlieDan.jpg' alt=''>
+    <p>Charlie and Dan</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-6' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/CRAD1.jpg' alt=''>
+    <p>CR Arabian Dreams</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-7' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/CharlieDrake.jpg' alt=''>
+    <p>Charlie and Drake</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-8' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/CharlieEye.jpg' alt=''>
+    <p>Charlie</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-9' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/DrakeBelle.jpg' alt=''>
+    <p>Belle and Drake</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/DrakeFoal.jpg' alt=''>
+    <p>Drake and foal</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/CharlieEars.jpg' alt=''>
+    <p>Charlie on the trails</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/danpp.jpg' alt=''>
+    <p>Dan (for Stud)</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/DreamTruck.jpg' alt=''>
+    <p>Dream and the Truck</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/ducatti2.jpg' alt=''>
+    <p>Ducatti (for Sale)</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/flowerbed.jpg' alt=''>
+    <p>Flower Bed</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/flowersign.jpg' alt=''>
+    <p>Entrance to the Farm</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/HorseNap.jpg' alt=''>
+    <p>Napping on the Trails</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/KimWaylon.jpg' alt=''>
+    <p>Kim and Waylon</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/KimEnchantment.jpg' alt=''>
+    <p>Kim and Enchantment</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/WaylonAllyPrince.jpg' alt=''>
+    <p>Waylon, Ally, and Prince</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/PhanceeHarvey.jpg' alt=''>
+    <p>Phancee and Harvey</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/PrinceHaarleyWaylon.jpg' alt=''>
+    <p>Prince, Harvey, and Waylon</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/waylonGoof.jpg' alt=''>
+    <p>Waylon in the hay</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/TwoMares.jpg' alt=''>
+    <p>Two visiting mares</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/Welcome2.jpg' alt=''>
+    <p>Welcome Sign with Harvey</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/charlieKimTrail.jpg' alt=''>
+    <p>Charlie and Kim</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/danbutt.jpg' alt=''>
+    <p>Dan and Kim</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src='https://crarabiandreams.s3.us-east-2.amazonaws.com/CharlieHead.jpg' alt=''>
+    <p>Charlie</p>
+  </div>
+
+</div>
 <footer>
 </footer>
 </body>

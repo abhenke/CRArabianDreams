@@ -9,14 +9,20 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css?v=1.1">
   
 <title>CR Arabian Dreams</title>
 <style>
-body{
-  	background-color: #CCF3F1;
-  	justify-content: center;
-  	text-align:center;
-}
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+    font-family: sans-serif;
+    background-color: #CCF3F1;
+  }
 
 .text{
 width: 50%;
@@ -73,19 +79,23 @@ margin-top: 30px;
 }
 
 .item{
-border-width: 5px;
-border-style: dotted;
-border-color: #D7BE69;
-max-width: 500px;
-margin-right: auto;
-margin-left: auto;
-margin-top: 30px;
+  border-width: 5px;
+  border-style: dotted;
+  border-color: #D7BE69;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
 }
 
 #button{
-margin-bottom: 30px;
-color: #800000;
-background-color: #D7BE69;
+  margin-bottom: 30px;
+  color: #800000;
+  background-color: #D7BE69;
+}
+figcaption{
+  margin-right: 15px;
+  margin-left: 15px;
 }
 </style>
 </head>
@@ -120,7 +130,7 @@ background-color: #D7BE69;
 </h3>
 <div class="item">
 
-  <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/DanSide.jpg" alt="Dan1" /></div>
+  <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/danfancy2.jpg" alt="Dan1" /></div>
   <figcaption>
     <h3>Notorious Dan</h3>
     <h4>"Dan"</h4>
@@ -132,15 +142,19 @@ background-color: #D7BE69;
           
 	          <input type="submit" value="Pedigree" id="button"/>
 		</form>
+
+    <form action="Dan.html" method="GET">
+      <input type="submit" value="Photo Gallery" id="button"/>
+    </form>
   </figcaption>
 </div>
 
 <div class="item">
-  <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/Waylon.jpg" alt="Waylon" /></div>
+  <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/WaylonGallop.PNG" alt="Waylon" /></div>
   <figcaption>
     <h3>CR AD Divine Edition</h3>
     <h4>"Waylon"</h4>
-    <h3>Will be available for stud 2022.<br>
+    <h3>Available for stud.<br>
         14.1hh <br>
         N/N (clear) on his three panels. <br>
         </h3>
@@ -149,22 +163,28 @@ background-color: #D7BE69;
 	          <input type="submit" value="Pedigree" id="button"/>
 		</form>
 
+    <form action="Waylon.html" method="GET">
+      <input type="submit" value="Photo Gallery" id="button"/>
+    </form>
   </figcaption>
 </div>
 
 <div class="item">
-  <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/PrinceProfile.jpg" alt="princeProfile" /></div>
+  <div class="profile-image"><img src="https://crarabiandreams.s3.us-east-2.amazonaws.com/PrinceGallop.PNG" alt="Prince" /></div>
   <figcaption>
     <h3>CR AD Prince Nelson TB</h3>
     <h4>"Prince"</h4> 
-    <h3> Will be available for stud 2022.<br>
+    <h3> Available for stud.<br>
         14.3hh (estimated to grow to 15hh)<br>
         N/N (clear) on his three panels.
         </h3>
-		<form action="https://www.allbreedpedigree.com/crad+prince+nelson" method="GET">	
-          
+		<form action="https://www.allbreedpedigree.com/crad+prince+nelson" method="GET">
 	          <input type="submit" value="Pedigree" id="button"/>
 		</form>
+
+    <form action="Prince.html" method="GET">
+      <input type="submit" value="Photo Gallery" id="button"/>
+    </form>
   </figcaption>
 </div>
 
