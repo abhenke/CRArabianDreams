@@ -6,7 +6,6 @@ body {
     justify-content: center;
     text-align:center;
     font-family: sans-serif;
-    background-color: #E3F3FF;
     background-image: repeating-radial-gradient(#E3F3FF, #FFFFFF);
 }
 
@@ -14,6 +13,10 @@ body {
     max-width: 500px;
     margin-right: auto;
     margin-left: auto;
+}
+
+h1, h2{
+    font-family:coconat;
 }
 
 @media only screen and (max-width: 768px) {
@@ -31,12 +34,15 @@ body {
     button{
         border: 0;
         padding: 0;
-        background-color: #E3F3FF;
+        background: rgba(255, 122, 89, 0);
+        font-weight: bold;
+        font-size: 25px;
+        font-family:coconat;
     }
 
     .navbar{
-        background-color: #E3F3FF;
         border-style: none;
+        background: rgba(255, 122, 89, 0);
     }
 
     .navbar-nav{
@@ -58,5 +64,30 @@ body {
 }
 
 img{
-    max-width: 60%;
+    max-width: 500px;
+}
+
+.item{
+    border-width: 5px;
+    border-style: dotted;
+    border-color: #600038;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+#button{
+    margin-bottom: 30px;
+    color: #600038;
+    background-color: #E3F3FF;
+    font-weight: bold;
+}
+
+.btn{
+    margin-bottom: 30px;
+    color: #600038;
+    background-color: #E3F3FF;
+    font-weight: bold;
+    border-color: #600038;
 }
